@@ -1,0 +1,88 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: black;
+  padding: 15px 40px;
+}
+
+.logo img {
+  height: 60px;
+  width: auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ff0000;
+}
+
+/* Logo Gallery Section */
+.logo-gallery {
+  background: #111;
+  color: white;
+  padding: 60px;
+  text-align: center;
+}
+
+.logo-gallery h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #ff0000;
+}
+
+.logo-gallery p {
+  margin-bottom: 40px;
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+}
+
+.item img {
+  width: 100%;
+  max-width: 250px;
+  margin: 0 auto;
+  display: block;
+  background: grey;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.item img:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* Footer */
+footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
